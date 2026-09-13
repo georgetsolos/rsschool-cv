@@ -1,4 +1,142 @@
-css
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background: #f4f6f8;
+  padding: 2rem 1rem;
+}
+
+/* Center everything with a max-width container */
+.site-header,
+.site-nav,
+main,
+.site-footer {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 1.5rem 0 2rem;
+  border-bottom: 3px solid #2c7be5;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2c7be5;
+}
+
+.site-header h1 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 2rem;
+}
+
+.role {
+  color: #52606d;
+  margin: 0;
+}
+
+/* Navigation */
+.site-nav {
+  margin: 1.5rem auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+}
+
+.site-nav a {
+  color: #2c7be5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+main section {
+  background: #fff;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+main section h2 {
+  margin-top: 0;
+  color: #2c7be5;
+  font-size: 1.25rem;
+}
+
+main section ul {
+  padding-left: 1.25rem;
+}
+
+main section a {
+  color: #2c7be5;
+}
+
+/* Code block */
+pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: 'Fira Code', Consolas, Monaco, monospace;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #52606d;
+  padding: 1.5rem 0;
+}
+
+.site-footer a {
+  color: #2c7be5;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.site-footer img {
+  vertical-align: middle;
+  margin-right: 0.35rem;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}css
 Copy
 Download
 * {
